@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Variables*/
+$color: teal;
+$background-color: skyblue;
+$heading-color: white;
+$hr-border: 3px solid black;
+$heading-background-color: plum;
+$small-scr-background-color:rgb(99, 201, 241);
+$field-width: 25%;
+$h2-color: rgb(248, 143, 248);
+$font-face: Franklin Gothic Medium;
+$font-size: 1.5rem;
+$nav-color: rgba(53, 13, 197, 0.767);
+$cycle-color: rgb(226, 243, 239);
+
+body{
+    background-color: $heading-color;
+    overflow-x: hidden;
+}
+
+/* Nav bar styling*/
+.nav{ 
+    background-color: $nav-color;
+    
+}
+
+/*home.html styling*/
+
+.header{
+    text-align: center;
+    color: $nav-color;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    font-size: 1.5em;
+}
+
+main{
+    margin-top: 3rem;
+    
+}
+
+.card{
+   width: 20rem;
+   margin-bottom: 3rem;
+   margin-left: 3.4rem;
+    
+}
+
+@media(max-width: 499px){
+    .card{margin-left: 4.2rem;
+    }
+}
+
+.container{
+    background-color: $heading-color;
+    text-align: center;
+    border: none;
+    margin-top: 0em;
+}
+
+@media(max-width:499px){
+    .container{
+        background-color: $heading-color;
+    }
+}
+
+img{
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+    
+}
+
+img[alt=fig]{
+    max-width: 250px;
+}
+
+img[alt=tech]{
+    max-width: 100%;
+    
+}
+
+.card-img-top{
+    align-self: center;
+    max-width: 80px;
+}
+
+.card-img-top[alt=fig]{
+    max-width: 200px;
+    margin-top: 0px;
+}
+
+@media(max-width: 500px){
+   img{height: auto;
+    max-width: 100px;
+   }
+
+   #img-container{
+       height: 350px;
+       background-color: $small-scr-background-color;
+   }
+  
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+.welcome-msg{
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+}
+
+#heading{
+    color: $heading-color;
+    font-family: $font-face;
+    font-size: $font-size;
+    padding-left: 3%;
+    /*padding-bottom: 15px;*/
+
+}
+
+hr{
+    margin-left: 3%;
+    margin-right: 3%;
+    border: none;
+    height: 1px;
+    background-color: $h2-color;
+}
+
+
+.address-container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+@media(min-width: 500px) {
+    .address-container{
+        color: $color;
+    }
+}
+
+@media(max-width: 500px){
+    .address-container{
+        padding-top: 5%;
+        font-size: 0.8rem;
+        color: white;
+    }
+
+
+}
+
+#fill-form{
+    border: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+@media(max-width: 500px){
+    #fill-form{
+        color: $nav-color;
+        font-size: 1rem;
+        margin-top: 2rem;
+        /*padding-bottom: 0px;*/
+    }
+}
+
+#contact-form{
+    display: flex;
+    height: 600px;
+    width: 50%;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    
+}
+
+/*Implementing sass inheritance concept*/
+
+%message{
+    border: none;
+    border-radius: 8px 8px 8px 8px;
+    width: $field-width;
+    height: 35px;
+    padding-left: 1em;
+}
+
+input[type = text]{
+    @extend %message;
+    background-color: $small-scr-background-color;
+   
+}
+
+input[type = email]{
+    @extend %message;
+    background-color: $h2-color;
+    
+}
+
+input[name = phone]{
+    @extend %message;
+    background-color: $small-scr-background-color;
+   
+}
+
+input[name = service]{
+    @extend %message;
+    background-color: $h2-color;
+    
+}
+
+textarea[name = message]{
+    width: $field-width;
+    border: 1px solid $nav-color;
+    color: lightseagreen;
+}
+
+@media(max-width: 499px){
+    textarea[name = message]{
+       width: auto;
+    }
+}
+
+.field{
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+
+input[type = checkbox]{
+    margin-bottom: 1rem;
+}
+
+@media(max-width: 500px){
+    input[type = text]{
+        @extend %message;
+        background-color: $h2-color;
+       
+    }
+    
+    
+    input[type = email]{
+        @extend %message;
+        background-color: $small-scr-background-color;
+        
+    }
+    
+    input[name = phone]{
+        @extend %message;
+        background-color: $h2-color;
+       
+    }
+    
+    input[name = service]{
+        @extend %message;
+        background-color: $small-scr-background-color;
+        
+    }
+    input[type = text]{
+        width: auto;
+    }
+    input[type = email]{
+        width: auto;
+
+    }
+    input[name = service]{
+        width: auto;
+    }
+
+    input[name = phone]{
+        width: auto;
+    }
+
+}
+
+
+button{
+    box-shadow: 10px, 10px, 10px, 10px;
+    border: none;
+    background-color: $small-scr-background-color;
+    color: white;
+}
+
+.btn-outline-primary{
+    margin-bottom: 5rem;
+}
+
+button:hover{
+    background-color:violet;
+}
+
+/* About.html styling*/
+.heading-about{
+    background-color: $h2-color;
+    padding-bottom: 50px;
+}
+
+@media(max-width: 500px){
+    .heading-about{
+        background-color: $small-scr-background-color;
+    }
+}
+
+.ncdc{
+    text-align: center;
+    color: red;
+}
+
+
+table{
+    text-align: center;
+    border: 2px solid yellowgreen;
+    margin: auto;
+    
+    width: 40%;
+}
+
+th,td{
+    border: 1px solid yellowgreen;
+    padding: 1px;
+}
+
+th{
+    background-color: green;
+    color: $heading-color;
+}
+section{
+    text-align: center;
+    background-color: $heading-color;
+    padding-bottom: 50px;
+}
+
+ul>li{
+    
+    padding-top: 3px;
+}
+
+h2{
+    color: $h2-color;
+    font-family: Franklin Gothic Medium;
+    font-weight: bold;
+      
+}
+
+
+/* Services.html styling*/
+#search{
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type = search]{
+    width: 15%;
+    height: auto; 
+    margin: 20px 0px 0px 0px; 
+        
+}
+
+
+.btn-info{
+    margin: 20px 5px 0px 3px;
+    height: auto;
+    width: auto;
+   
+}
+    
+
+@media(max-width: 499px){
+    input[type = search]{
+        width: 40%;
+        height: auto;
+    }
+
+    .btn-info{
+        margin: 20px 1px 0px 3px;
+        
+        
+    }
+} 
+
+.container-fluid{
+    background-color: $h2-color;
+    height: auto;
+    border: none;
+
+    
+}
+
+@media(max-width:499px){
+   .container-fluid{
+       background-color: $small-scr-background-color;
+   } 
+}
+
+
+/*Services.html styling*/
+
+#services{
+   height: auto;
+   padding-bottom: 5rem;
+   margin-top: 5rem;
+   background-color: $h2-color;
+   text-align: center;
+   color: $heading-color;
+   font-size: 3rem;
+   font-family: $font-face;
+  
+}
+
+
+@media(max-width: 499px){
+    #services{
+        background-color: inherit;
+        
+    }
+}
+@media(max-width: 499px){
+    #services{
+        text-align: left;
+        margin-left: 1rem;
+}
+}
+
+#service-list{
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    
+    
+}
+
+@media(max-width:499px){
+    #service-list{
+        margin-left: 1rem;
+    }
+}
+
+.p-list::before{
+    content: "\21d2 ";
+    padding-right: 5px;
+    color:$nav-color;
+    font-weight: bold;
+}
+
+
+
+img[alt=symbol]{
+    padding-bottom: 2rem;
+}
+
+#hr{
+    margin-left: 0rem;
+    width: 14%;
+    height: 2px;
+    background-color: $small-scr-background-color;
+    
+}
+
+@media(min-width: 499px){
+    #hr{
+        width: 27%;
+    }
+}
+
+.col-sm-3{
+    padding-top: 3rem;
+}
+
+#cycle{
+    background-color: $cycle-color;
+    padding-bottom: 5rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#tech{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    
+}
+
+#p-tag{
+    text-align: justify;
+    padding-top: 2rem;
+}
+
+
+/*Footer Styling*/
+footer{
+    background-color: $nav-color;
+    text-align: center;
+   height: auto;
+   color: $heading-color;
+}
+
+
+@media(max-width:499px){
+    footer{
+        background-color: $h2-color;
+       
+    }
+
+}
+
+
+
+
+
+
+
+
+
