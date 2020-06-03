@@ -21,12 +21,6 @@ body{
     overflow-x: hidden;
 }
 
-@media(max-width: 499px){
-    body{
-        overflow-x: hidden;
-    }
-}
-
 /* Nav bar styling*/
 .nav{ 
     background-color: $nav-color;
@@ -55,11 +49,6 @@ main{
     
 }
 
-@media(max-width: 499px){
-    .card{
-        margin: auto;
-    }
-}
 
 .container{
     background-color: $heading-color;

@@ -10,11 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 499px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 /* Nav bar styling*/
 .nav {
   background-color: rgba(53, 13, 197, 0.767);
@@ -38,11 +33,6 @@ main {
   margin: auto;
 }
 
-@media (max-width: 499px) {
-  .card {
-    margin: auto;
-  }
-}
 .container {
   background-color: white;
   text-align: center;
