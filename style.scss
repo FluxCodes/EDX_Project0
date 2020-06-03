@@ -21,6 +21,12 @@ body{
     overflow-x: hidden;
 }
 
+@media(max-width: 499px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
 /* Nav bar styling*/
 .nav{ 
     background-color: $nav-color;
@@ -44,13 +50,14 @@ main{
 
 .card{
    width: 20rem;
-   margin-bottom: 3rem;
-   margin-left: 3.4rem;
+   margin: auto;
+   
     
 }
 
 @media(max-width: 499px){
-    .card{margin-left: 4.2rem;
+    .card{
+        margin: auto;
     }
 }
 
@@ -315,6 +322,12 @@ button:hover{
 .ncdc{
     text-align: center;
     color: red;
+}
+
+@media(max-width: 499px){
+    .ncdc{
+        font-size: 0.6rem;
+    }
 }
 
 
