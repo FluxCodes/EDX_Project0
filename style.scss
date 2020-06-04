@@ -325,6 +325,12 @@ button:hover{
     font-size: 1rem;
 }
 
+@media(max-width:499px){
+    #profile>p{
+        font-size: 0.8rem;
+    }
+}
+
 
 table{
     text-align: center;
@@ -357,7 +363,7 @@ ul>li{
 }
 
 @media(max-width: 499px){
-    u>li, #profile>p{
+    u>li{
         font-size: 0.8rem;
 }
 }
