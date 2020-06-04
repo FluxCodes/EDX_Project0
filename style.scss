@@ -45,7 +45,7 @@ main{
 .card{
    width: 20rem;
    margin: auto;
-   padding-bottom: 2rem;
+   padding-bottom: 3rem;
    
     
 }
@@ -359,6 +359,7 @@ ul>li{
 @media(max-width: 499px){
     u>li, #profile>p{
         font-size: 0.8rem;
+}
 }
 
 h2{
