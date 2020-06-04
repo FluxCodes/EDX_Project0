@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 499px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 /* Nav bar styling*/
 .nav {
   background-color: rgba(53, 13, 197, 0.767);
