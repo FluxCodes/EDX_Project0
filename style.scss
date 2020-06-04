@@ -322,6 +322,7 @@ button:hover{
 
 #profile>p{
     color: $color;
+    font-size: 1rem;
 }
 
 
@@ -353,6 +354,11 @@ ul>li{
     padding-top: 3px;
     font-size: 1rem;
     color: $nav-color;
+}
+
+@media(max-width: 499px){
+    u>li, #profile>p{
+        font-size: 0.8rem;
 }
 
 h2{
