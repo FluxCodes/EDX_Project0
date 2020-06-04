@@ -45,8 +45,7 @@ main{
 .card{
    width: 20rem;
    margin: auto;
-   padding-bottom: 3rem;
-   
+   margin-bottom: 1.5rem; 
     
 }
 
@@ -363,7 +362,7 @@ ul>li{
 }
 
 @media(max-width: 499px){
-    u>li{
+    ul>li{
         font-size: 0.8rem;
 }
 }
