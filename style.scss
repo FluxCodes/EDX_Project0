@@ -45,6 +45,7 @@ main{
 .card{
    width: 20rem;
    margin: auto;
+   padding-bottom: 2rem;
    
     
 }
@@ -346,6 +347,8 @@ section{
 ul>li{
     
     padding-top: 3px;
+    font-size: 1rem;
+    color: $nav-color;
 }
 
 h2{

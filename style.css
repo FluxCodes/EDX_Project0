@@ -31,6 +31,7 @@ main {
 .card {
   width: 20rem;
   margin: auto;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -292,6 +293,8 @@ section {
 
 ul > li {
   padding-top: 3px;
+  font-size: 1rem;
+  color: rgba(53, 13, 197, 0.767);
 }
 
 h2 {
